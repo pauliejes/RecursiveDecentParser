@@ -1,0 +1,7 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="DBE.Init.Cfg.1" value="true" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DBE.Init.DialogShown.Ide" value="true" />
+  </component>
+</application>

@@ -1,0 +1,61 @@
+2018-11-06 16:41:13,617 [      0]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE STARTED ------------------------------------------------------ 
+2018-11-06 16:41:13,635 [     18]   INFO -        #com.intellij.idea.Main - IDE: DataGrip (build #DB-172.3757.39, 09 Aug 2017 19:03) 
+2018-11-06 16:41:13,635 [     18]   INFO -        #com.intellij.idea.Main - OS: Linux (4.15.0-36-generic, amd64) 
+2018-11-06 16:41:13,635 [     18]   INFO -        #com.intellij.idea.Main - JRE: 1.8.0_152-release-915-b10 (JetBrains s.r.o) 
+2018-11-06 16:41:13,635 [     18]   INFO -        #com.intellij.idea.Main - JVM: 25.152-b10 (OpenJDK 64-Bit Server VM) 
+2018-11-06 16:41:13,665 [     48]   INFO -        #com.intellij.idea.Main - JVM Args: -Xbootclasspath/a:/usr/share/jetbrains/DataGrip-2017.2.1/lib/boot.jar -Xms128m -Xmx750m -XX:ReservedCodeCacheSize=240m -XX:+UseConcMarkSweepGC -XX:SoftRefLRUPolicyMSPerMB=50 -ea -Dsun.io.useCanonCaches=false -Djava.net.preferIPv4Stack=true -XX:+HeapDumpOnOutOfMemoryError -XX:-OmitStackTraceInFastThrow -Dawt.useSystemAAFontSettings=lcd -Dsun.java2d.renderer=sun.java2d.marlin.MarlinRenderingEngine -XX:ErrorFile=/home/faculty/rshore/java_error_in_DATAGRIP_%p.log -XX:HeapDumpPath=/home/faculty/rshore/java_error_in_DATAGRIP.hprof -Didea.paths.selector=DataGrip2017.2 -Djb.vmOptionsFile=/usr/share/jetbrains/DataGrip-2017.2.1/bin/datagrip64.vmoptions -Didea.platform.prefix=DataGrip 
+2018-11-06 16:41:13,665 [     48]   INFO -        #com.intellij.idea.Main - ext: /usr/share/jetbrains/DataGrip-2017.2.1/jre64/lib/ext: [nashorn.jar, meta-index, dnsns.jar, zipfs.jar, cldrdata.jar, sunec.jar, sunpkcs11.jar, sunjce_provider.jar, jaccess.jar, jfxrt.jar, localedata.jar] 
+2018-11-06 16:41:13,665 [     48]   INFO -        #com.intellij.idea.Main - JNU charset: UTF-8 
+2018-11-06 16:41:13,736 [    119]   INFO -        #com.intellij.idea.Main - JNA library (64-bit) loaded in 71 ms 
+2018-11-06 16:44:08,101 [ 174484]   INFO - .intellij.idea.IdeaApplication - WM detected: Metacity (Marco) 
+2018-11-06 16:44:08,526 [ 174909]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor uml-properties-support.xml 
+2018-11-06 16:44:08,528 [ 174911]   INFO - llij.ide.plugins.PluginManager - Cannot find optional descriptor uml-java-support.xml 
+2018-11-06 16:44:08,832 [ 175215]   INFO - llij.ide.plugins.PluginManager - 5 plugins initialized in 556 ms 
+2018-11-06 16:44:08,832 [ 175215]   INFO - llij.ide.plugins.PluginManager - Loaded bundled plugins: DataGrip Customization (172.3757.39), Database Tools and SQL (172.3757.39), IDEA CORE (172.3757.39), IntelliLang (8.0), UML Support (1.0) 
+2018-11-06 16:44:09,544 [ 175927]   INFO - ellij.vfs.persistent.FSRecords - Marking VFS as corrupted: '/home/faculty/rshore/.DataGrip2017.2/system/caches/names.dat' does not exist 
+2018-11-06 16:44:09,548 [ 175931]   INFO - ellij.util.io.PagedFileStorage - lower=100; upper=500; buffer=10; max=705 
+2018-11-06 16:44:09,650 [ 176033]   INFO - pl.local.NativeFileWatcherImpl - Starting file watcher: /usr/share/jetbrains/DataGrip-2017.2.1/bin/fsnotifier64 
+2018-11-06 16:44:09,683 [ 176066]   INFO - pl.local.NativeFileWatcherImpl - Native file watcher is operational. 
+2018-11-06 16:44:10,829 [ 177212]   WARN - nSystem.impl.ActionManagerImpl - keymap "Visual Studio" not found [Plugin: com.intellij] 
+2018-11-06 16:44:11,018 [ 177401]   INFO - .history.utils.LocalHistoryLog - local history version mismatch (was: 0, expected: 6), rebuilding... 
+2018-11-06 16:44:11,019 [ 177402]   INFO - .history.utils.LocalHistoryLog - FS has been rebuild, rebuilding local history... 
+2018-11-06 16:44:11,203 [ 177586]   INFO - til.net.ssl.CertificateManager - Default SSL context initialized 
+2018-11-06 16:44:11,644 [ 178027]   INFO - rains.ide.BuiltInServerManager - built-in server started, port 63342 
+2018-11-06 16:44:11,714 [ 178097]   INFO - gs.impl.UpdateCheckerComponent - channel: release 
+2018-11-06 16:44:12,176 [ 178559]   INFO - il.indexing.FileBasedIndexImpl - Index exts enumerated:277 
+2018-11-06 16:44:12,186 [ 178569]   INFO - il.indexing.FileBasedIndexImpl - Index scheduled:10 
+2018-11-06 16:44:12,233 [ 178616]   INFO - tellij.psi.stubs.StubIndexImpl - All stub exts enumerated:34 
+2018-11-06 16:44:12,246 [ 178629]   INFO - tellij.psi.stubs.StubIndexImpl - stub exts update scheduled:13 
+2018-11-06 16:44:12,372 [ 178755]   INFO - j.ide.script.IdeStartupScripts - 0 startup script(s) found 
+2018-11-06 16:44:12,958 [ 179341]   INFO - ij.psi.stubs.StubUpdatingIndex - Following new file types will be indexed:SQL,HTML,XML 
+2018-11-06 16:44:13,615 [ 179998]   INFO - pl$FileIndexDataInitialization - Initialization done:1428 
+2018-11-06 16:44:13,785 [ 180168]   INFO - exImpl$StubIndexInitialization - Initialization done:170 
+2018-11-06 16:44:15,575 [ 181958]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.openapi.actionSystem.impl.ActionPreloader@49cf323e 
+2018-11-06 16:44:15,786 [ 182169]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.ide.ui.search.SearchableOptionPreloader@59df7fc6 
+2018-11-06 16:44:15,952 [ 182335]   INFO - .openapi.application.Preloader - Finished preloading com.intellij.codeInsight.completion.CompletionPreloader@1d7d3096 
+2018-11-06 16:44:26,383 [ 192766]   INFO - .intellij.idea.IdeaApplication - App initialization took 205808 ms 
+2018-11-06 16:44:27,086 [ 193469]   INFO - ellij.project.impl.ProjectImpl - 14 project components initialized in 213 ms 
+2018-11-06 16:44:28,175 [ 194558]   INFO - ellij.project.impl.ProjectImpl - 85 project components initialized in 571 ms 
+2018-11-06 16:44:28,185 [ 194568]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2018-11-06 16:44:28,337 [ 194720]   INFO - ellij.project.impl.ProjectImpl - 85 project components initialized in 34 ms 
+2018-11-06 16:44:28,338 [ 194721]   INFO - le.impl.ModuleManagerComponent - 0 module(s) loaded in 0 ms 
+2018-11-06 16:44:28,721 [ 195104]   WARN - om.intellij.util.ProfilingUtil - Profiling agent is not enabled. Add -agentlib:yjpagent to idea.vmoptions if necessary to profile IDEA. 
+2018-11-06 16:44:29,002 [ 195385]   INFO - .diagnostic.PerformanceWatcher - Post-startup activities under progress took 38ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-11-06 16:44:29,009 [ 195392]   INFO - pl.projectlevelman.NewMappings - VCS Root: [] - [<Project>] 
+2018-11-06 16:44:29,258 [ 195641]   INFO - tor.impl.FileEditorManagerImpl - Project opening took 976 ms 
+2018-11-06 16:44:29,260 [ 195643]   INFO - .diagnostic.PerformanceWatcher - Pushing properties took 5ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-11-06 16:44:29,441 [ 195824]   INFO - .diagnostic.PerformanceWatcher - Indexable file iteration took 180ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-11-06 16:44:29,442 [ 195825]   INFO - indexing.UnindexedFilesUpdater - Unindexed files update started: 210 files to update 
+2018-11-06 16:44:30,079 [ 196462]   INFO - .diagnostic.PerformanceWatcher - Unindexed files update took 637ms; general responsiveness: ok; EDT responsiveness: ok 
+2018-11-06 16:46:05,257 [ 291640]   INFO - stubs.SerializationManagerImpl - START StubSerializationManager SHUTDOWN 
+2018-11-06 16:46:05,257 [ 291640]   INFO - stubs.SerializationManagerImpl - END StubSerializationManager SHUTDOWN 
+2018-11-06 16:46:05,257 [ 291640]   INFO - il.indexing.FileBasedIndexImpl - START INDEX SHUTDOWN 
+2018-11-06 16:46:05,311 [ 291694]   INFO - il.indexing.FileBasedIndexImpl - END INDEX SHUTDOWN 
+2018-11-06 16:46:05,315 [ 291698]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
+2018-11-06 16:46:05,327 [ 291710]   INFO - Types.impl.FileTypeManagerImpl - FileTypeManager: 4 auto-detected files
+Elapsed time on auto-detect: 20 ms 
+2018-11-06 16:46:05,341 [ 291724]   INFO - pl.local.NativeFileWatcherImpl - Watcher terminated with exit code 0 
+2018-11-06 16:46:05,357 [ 291740]   INFO - newvfs.persistent.PersistentFS - VFS dispose started 
+2018-11-06 16:46:05,392 [ 291775]   INFO - newvfs.persistent.PersistentFS - VFS dispose completed 
+2018-11-06 16:46:05,399 [ 291782]   INFO -        #com.intellij.idea.Main - ------------------------------------------------------ IDE SHUTDOWN ------------------------------------------------------ 
+2018-11-06 16:46:05,406 [ 291789]   INFO - org.jetbrains.io.BuiltInServer - web server stopped 
