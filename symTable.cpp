@@ -30,7 +30,11 @@
 
 #include<iostream>
 #include<stdio.h>
-#include<general.h>
+#include"general.h"
+#include"lex.h"
+#include"topDownParser.h"
+
+
 
 using namespace std;
 
@@ -47,7 +51,6 @@ int main(void) {
     lex();
     expr();
   } while (nextToken != EOF);
- 
+
    //}
 }
-

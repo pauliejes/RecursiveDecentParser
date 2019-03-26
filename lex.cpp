@@ -1,6 +1,6 @@
 #include<iostream>
-#include<general.h>
-#include<lex.h>
+#include"general.h"
+#include"lex.h"
 
 
 /*****************************************************/

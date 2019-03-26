@@ -85,7 +85,7 @@ int main(void) {
     lex();
     expr();
   } while (nextToken != '@');
- 
+
    //}
 }
 
@@ -150,7 +150,7 @@ void getChar()
 {
    string input;
    cin >> input;
-   
+
    curChar = input[strPtr];
 
    if ((nextChar = curChar) != '@') {
@@ -162,7 +162,7 @@ void getChar()
          charClass = OPERATOR;
    } else
       charClass = '@';
-      
+
    strPtr++;
 }
 /*****************************************************/
