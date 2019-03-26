@@ -2,6 +2,8 @@
 #include"general.h"
 #include"lex.h"
 
+using namespace std;
+
 
 /*****************************************************/
 /* lookup - a function to lookup operators and parentheses
@@ -62,7 +64,8 @@ void addChar()
 */
 void getChar()
 {
-   if ((nextChar = getc(in_fp)) != EOF) {
+   cin.get(nextChar);
+   if (nextChar != EOF) {
       if (isalpha(nextChar))
          charClass = LETTER;
       else if (isdigit(nextChar))

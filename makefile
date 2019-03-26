@@ -8,6 +8,6 @@ lex.o:		lex.cpp lex.h
 topDownParser.o:		topDownParser.cpp topDownParser.h
 			$(CC) -c topDownParser.cpp
 
-symTable.o:	symTable.cpp general.h
+symTable.o:	symTable.cpp symTable.h
 			$(CC) -c symTable.cpp
 
