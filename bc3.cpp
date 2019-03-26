@@ -39,7 +39,9 @@ using namespace std;
 char lexeme [100];
 char nextChar;
 int lexLen;
-FILE *in_fp, *fopen();
+char curChar;
+int strPtr;
+//FILE *in_fp, *fopen();
 
 /* Function declarations */
 void addChar();
@@ -82,7 +84,7 @@ int main(void) {
   do {
     lex();
     expr();
-  } while (nextToken != EOF);
+  } while (nextToken != '@');
  
    //}
 }
@@ -119,7 +121,7 @@ int lookup(char ch)
                 break;
       default:
                 addChar();
-                nextToken = EOF;
+                nextToken = '@';
                 break;
 
    }
@@ -146,7 +148,12 @@ void addChar()
 */
 void getChar()
 {
-   if ((nextChar = getc(in_fp)) != EOF) {
+   string input;
+   cin >> input;
+   
+   curChar = input[strPtr];
+
+   if ((nextChar = curChar) != '@') {
       if (isalpha(nextChar))
          charClass = LETTER;
       else if (isdigit(nextChar))
@@ -154,7 +161,9 @@ void getChar()
       else
          charClass = OPERATOR;
    } else
-      charClass = EOF;
+      charClass = '@';
+      
+   strPtr++;
 }
 /*****************************************************/
 /* getNonBlank - remove white space characters.
@@ -208,9 +217,9 @@ int lex()
                    lookup(nextChar);
                    getChar();
                    break;
-      /* EOF */
-      case EOF:
-                   nextToken = EOF;
+      /* ‘@’ */
+      case '@':
+                   nextToken = '@';
                    lexeme[0] = 'E';
                    lexeme[1] = 'O';
                    lexeme[2] = 'F';

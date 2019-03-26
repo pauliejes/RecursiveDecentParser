@@ -1,6 +1,22 @@
+#include<iostream>
+#include<stdio.h>
+#include<ctype.h>
+
+/* Global declarations */
+/* Variables */
+extern char lexeme [100];
+extern char nextChar;
+extern int lexLen;
+
+/* Character classes */
+int charClass;
 #define LETTER 0
 #define DIGIT 1
 #define OPERATOR 99
+
+/* Token codes */
+int token;
+int nextToken;
 #define INT_LIT 10
 #define IDENT 11
 #define ASSIGN_OP 20
