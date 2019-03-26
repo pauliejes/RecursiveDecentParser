@@ -2,6 +2,8 @@
 #include<stdio.h>
 #include<ctype.h>
 
+#ifndef _GENERAL_H_
+#define _GENERAL_H_
 /* Global declarations */
 /* Variables */
 extern char lexeme [100];
@@ -17,6 +19,7 @@ int charClass;
 /* Token codes */
 int token;
 int nextToken;
+
 #define INT_LIT 10
 #define IDENT 11
 #define ASSIGN_OP 20
@@ -30,3 +33,5 @@ int nextToken;
 #define RIGHT_PAREN 28
 #define QUIT 29
 #define DUMP 30
+
+#endif
