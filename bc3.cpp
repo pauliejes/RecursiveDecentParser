@@ -293,16 +293,16 @@ void factor()
    /* If the RHS is ( <expr> ), call lex to pass over the left
       parenthesis, call expr and check for the right parenthesis */
    else if (nextToken == LEFT_PAREN) {
+      lex();
+      expr();
+      if (nextToken == RIGHT_PAREN)
          lex();
-         expr();
-         if (nextToken == RIGHT_PAREN)
-            lex();
-         else
-            error("Right without left paren");
+      else
+         error("Right without left paren");
    } else {
    /* It was not an id, an integer literal, or a left
-       parenthesis */
-       error("expected an id, integer, or a left paren");
+      parenthesis */
+      error("expected an id, integer, or a left paren");
    } /* End of else */
    printf("Exit <factor>\n");;
 }/* End of function factor */

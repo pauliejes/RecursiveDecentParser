@@ -6,5 +6,7 @@
 /* Function declarations */
 void expr();
 void term();
+void mod();
 void factor();
+void exponent();
 void error(const char *);

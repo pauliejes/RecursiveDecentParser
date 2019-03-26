@@ -24,5 +24,9 @@ int nextToken;
 #define SUB_OP 22
 #define MULT_OP 23
 #define DIV_OP 24
-#define LEFT_PAREN 25
-#define RIGHT_PAREN 26
+#define MOD_OP 25
+#define POW_OP 26
+#define LEFT_PAREN 27
+#define RIGHT_PAREN 28
+#define QUIT 29
+#define DUMP 30
