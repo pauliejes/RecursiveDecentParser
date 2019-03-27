@@ -5,6 +5,7 @@
 #ifndef _TOP_DOWN_PARSER_H_
 #define _TOP_DOWN_PARSER_H_
 /* Function declarations */
+void stmt();
 void expr();
 void term();
 void factor();
