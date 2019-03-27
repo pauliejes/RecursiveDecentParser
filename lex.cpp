@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 #include"general.h"
 #include"lex.h"
 
@@ -118,8 +119,14 @@ int lex()
                       addChar();
                       getChar();
                    }
-                   nextToken = IDENT;
+                   //recognize quit as a keyword
+                   if(strcmp(lexeme,"quit") == 0) {
+                     exit(10);
+                   } else {
+                      nextToken = IDENT;
+                   }
                    break;
+
 
       /* Parse integer literals - once you find the first
          digit, read and add digits to lexeme. */
