@@ -54,16 +54,31 @@ Symbol_table::~Symbol_table(void){
   Output:
     and integer between 0 - 211. The index of the bucket the variable belongs in
 */
-int Symbol_table::hash(const char * name) 
+// int Symbol_table::hash(const char * name) 
+// {
+//   int hashVal = 0;
+//   for (int i = 0; i < sizeof(name)/sizeof(char); ++i)
+//   {
+//     hashVal += int(name[i]) * i;
+//   }
+//   //cout << "hash = " << hashVal % 211 << endl;
+//   return hashVal % 211;
+// }
+
+unsigned int Symbol_table::hash(const char * str)
 {
-  int hashVal = 0;
-  for (int i = 0; i < sizeof(name)/sizeof(char); ++i)
+  unsigned int seed = 131; /* 31 131 1313 13131 131313 etc.. */ 
+  unsigned int hash = 0;
+  unsigned int i = 0; 
+
+  for (i = 0; i < sizeof(str)/sizeof(char); ++str, ++i)
   {
-    hashVal += int(name[i]) * i;
+    hash = (hash * seed) + (*str);
   }
-  //cout << "hash = " << hashVal % 211 << endl;
-  return hashVal % 211;
+  return hash;
 }
+
+
 /* Description: 
     This function inserts a symbol into the table if it is not already present in the table
     then returns a pointer to the symbols location in memory

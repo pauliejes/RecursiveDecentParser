@@ -35,6 +35,14 @@ int lookup(char ch)
                 addChar();
                 nextToken = DIV_OP;
                 break;
+      case '%':
+                addChar();
+                nextToken = MOD_OP;
+                break;
+      case '^':
+                addChar();
+                nextToken = POW_OP;
+                break;
       default:
                 addChar();
                 nextToken = EOF;

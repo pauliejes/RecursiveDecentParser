@@ -36,7 +36,7 @@ class Symbol_table {
 		Symbol_table(void);
 		~Symbol_table(void);
 		//hash function
-		int hash(const char * name);
+		unsigned int hash(const char * str);
 		//insert something into the table
 		Symbol_ptr insert (char * name);
 		//void remove(char *);
