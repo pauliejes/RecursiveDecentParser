@@ -11,14 +11,14 @@ extern char nextChar;
 extern int lexLen;
 
 /* Character classes */
-int charClass;
+extern int charClass;
 #define LETTER 0
 #define DIGIT 1
 #define OPERATOR 99
 
 /* Token codes */
-int token;
-int nextToken;
+extern int token;
+extern int nextToken;
 
 #define INT_LIT 10
 #define IDENT 11
