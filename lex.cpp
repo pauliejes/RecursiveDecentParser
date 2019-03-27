@@ -43,6 +43,10 @@ int lookup(char ch)
                 addChar();
                 nextToken = POW_OP;
                 break;
+      case '=':
+                addChar();
+                nextToken = ASSIGN_OP;
+                break;
       default:
                 addChar();
                 nextToken = EOF;

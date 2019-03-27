@@ -87,7 +87,12 @@ void term()
 {
    printf("Enter <term>\n");
    /* Parse the first factor */
-   factor();
+   if (nextToken == SUB_OP) {
+      lex();
+      factor();
+   } else {
+      factor();
+   }
    /* As long as the next token is * or /, get the
       next token and parse the next factor */
    while (nextToken == MULT_OP || nextToken == DIV_OP) {
@@ -101,7 +106,7 @@ void term()
 
 void mod()
 {
-   printf("Enter <mod>\n");
+   printf("Enter <term>\n");
    /* Parse the first factor */
    factor();
    /* As long as the next token is * or /, get the
@@ -110,15 +115,27 @@ void mod()
       lex();
       factor();
    }
-   printf("Exit <mod>\n");
+   printf("Exit <term>\n");
 
 } /* End of function term */
 
 
+// void minus()
+// {
+//    printf("Enter <term>\n");
+//     //As long as the next token is -, get the
+//     //  next token and parse the next factor 
+   // while (nextToken == SUB_OP) {
+   //    lex();
+   //    factor();
+   // }
+//    printf("Exit <term>\n");
+// }
+
 
 void exponent()
 {
-   printf("Enter <exponent>\n");
+   printf("Enter <factor>\n");
    /* Parse the first factor */
    factor();
    /* As long as the next token is * or /, get the
@@ -127,7 +144,8 @@ void exponent()
       lex();
       factor();
    }
-   printf("Exit <exponent>\n");
+   printf("Exit <factor>\n");
+
 
 } /* End of function term */
 
@@ -142,13 +160,13 @@ void factor()
 {
    printf("Enter <factor>\n");
    /* Determine which RHS */
-   if (nextToken == IDENT || nextToken == INT_LIT)
+   if (nextToken == IDENT || nextToken == INT_LIT){
       /* Get the next token d*/
       lex();
 
    /* If the RHS is ( <expr> ), call lex to pass over the left
       parenthesis, call expr and check for the right parenthesis */
-   else if (nextToken == LEFT_PAREN) {
+   } else if (nextToken == LEFT_PAREN) {
          lex();
          expr();
          if (nextToken == RIGHT_PAREN)
