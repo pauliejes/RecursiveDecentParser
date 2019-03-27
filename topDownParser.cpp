@@ -33,7 +33,7 @@
 #include"general.h"
 #include"lex.h"
 #include"topDownParser.h"
-#include"symTable.h"
+//#include"symTable.h"
 
 
 
@@ -143,7 +143,7 @@ void factor()
    printf("Enter <factor>\n");
    /* Determine which RHS */
    if (nextToken == IDENT || nextToken == INT_LIT)
-      /* Get the next token */
+      /* Get the next token d*/
       lex();
 
    /* If the RHS is ( <expr> ), call lex to pass over the left
