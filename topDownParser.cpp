@@ -33,7 +33,7 @@
 #include"general.h"
 #include"lex.h"
 #include"topDownParser.h"
-//#include"symTable.h"
+#include"symTable.h"
 
 
 
