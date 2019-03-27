@@ -1,5 +1,6 @@
 #include "symTable.h"
 #include <iostream>
+#include "general.h"
 using namespace std;
 
 Symbol_node::Symbol_node(char * id) {

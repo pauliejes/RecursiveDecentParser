@@ -1,6 +1,6 @@
 CC = g++
-bc:			symTable.o lex.o topDownParser.o symTable.o
-			$(CC) symTable.o lex.o topDownParser.o symTable.o -o bc
+bc:			symTable.o lex.o topDownParser.o 
+			$(CC) -o bc symTable.o lex.o topDownParser.o
 
 lex.o:		lex.cpp lex.h
 			$(CC) -c lex.cpp
