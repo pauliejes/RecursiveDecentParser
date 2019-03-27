@@ -95,7 +95,7 @@ void term()
    }
    /* As long as the next token is * or /, get the
       next token and parse the next factor */
-   while (nextToken == MULT_OP || nextToken == DIV_OP) {
+   while (nextToken == MULT_OP || nextToken == DIV_OP || nextToken == MOD_OP || nextToken == POW_OP) {
       lex();
       factor();
    }
@@ -103,21 +103,6 @@ void term()
 
 } /* End of function term */
 
-
-void mod()
-{
-   printf("Enter <term>\n");
-   /* Parse the first factor */
-   factor();
-   /* As long as the next token is * or /, get the
-      next token and parse the next factor */
-   while (nextToken == MOD_OP) {
-      lex();
-      factor();
-   }
-   printf("Exit <term>\n");
-
-} /* End of function term */
 
 
 // void minus()
@@ -132,22 +117,6 @@ void mod()
 //    printf("Exit <term>\n");
 // }
 
-
-void exponent()
-{
-   printf("Enter <factor>\n");
-   /* Parse the first factor */
-   factor();
-   /* As long as the next token is * or /, get the
-      next token and parse the next factor */
-   while (nextToken == POW_OP) {
-      lex();
-      factor();
-   }
-   printf("Exit <factor>\n");
-
-
-} /* End of function term */
 
 
 /* factor
