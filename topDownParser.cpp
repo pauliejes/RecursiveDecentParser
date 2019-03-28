@@ -95,7 +95,7 @@ int stmt()
       return_val = expr();
       while (nextToken == ASSIGN_OP) {
          lex();
-         return_val = expr();
+         return_val = stmt();
          cout << "return_val = " << return_val << endl;
          var_to_assign->putval(return_val);
       }
