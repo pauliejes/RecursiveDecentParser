@@ -161,8 +161,12 @@ void Symbol_table::dump_table() {
     
       ptrz = this->table[i];
       do{
-        cout << ptrz->id << " = " << ptrz->val <<endl;
-        ptrz = ptrz->getNext();
+      
+	cout << "============================"<<endl;
+	cout << ptrz->id << " = " << ptrz->val;    
+	cout << "============================"<<endl;
+	cout << ptrz->id << " = " << ptrz->val;
+	ptrz = ptrz->getNext();
       }while(ptrz != 0);
       cout << endl;
     }
