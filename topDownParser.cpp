@@ -128,9 +128,14 @@ int expr()
    }*/
    /* As long as the next token is + or -, get
       the next token and parse the next term */
-   while (nextToken == ADD_OP || nextToken == SUB_OP) {
+   while (nextToken == ADD_OP ) {
       lex();
-      return_val = term();
+      return_val += term();
+   }
+
+   while (nextToken == SUB_OP) {
+      lex();
+      return_val -= term();
    }
    cout << "Exit <expr>  return: " << return_val << endl;  
    return return_val;
