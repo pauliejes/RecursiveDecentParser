@@ -15,6 +15,7 @@ extern int charClass;
 #define LETTER 0
 #define DIGIT 1
 #define OPERATOR 99
+#define NEWLINE_CLASS 100
 
 /* Token codes */
 extern int token;

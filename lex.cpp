@@ -1,5 +1,4 @@
 #include<iostream>
-#include<cstring>
 #include"general.h"
 #include"lex.h"
 
@@ -48,9 +47,6 @@ int lookup(char ch)
                 addChar();
                 nextToken = ASSIGN_OP;
                 break;
-      case '\n':
-                addChar();
-                nextToken = NEWLINE;
       default:
                 addChar();
                 nextToken = EOF;
@@ -86,6 +82,8 @@ void getChar()
          charClass = LETTER;
       else if (isdigit(nextChar))
          charClass = DIGIT;
+      else if (nextChar == '\n')
+         charClass = NEWLINE_CLASS;
       else
          charClass = OPERATOR;
    } else
@@ -99,8 +97,9 @@ void getChar()
 */
 void getNonBlank()
 {
-   while (isspace(nextChar) && nextChar != '\n')
+   while (isspace(nextChar) && nextChar != '\n') {
       getChar();
+   }
 }
 
 
@@ -122,14 +121,8 @@ int lex()
                       addChar();
                       getChar();
                    }
-                   //recognize quit as a keyword
-                   if(strcmp(lexeme,"quit") == 0) {
-                     exit(10);
-                   } else {
-                      nextToken = IDENT;
-                   }
+                   nextToken = IDENT;
                    break;
-
 
       /* Parse integer literals - once you find the first
          digit, read and add digits to lexeme. */
@@ -148,6 +141,11 @@ int lex()
                    /* Call lookup to identify the type of operator */
                    lookup(nextChar);
                    getChar();
+                   break;
+      /* Newline characters */
+      case NEWLINE_CLASS:
+                   addChar();
+                   nextToken = NEWLINE;
                    break;
       /* EOF */
       case EOF:
