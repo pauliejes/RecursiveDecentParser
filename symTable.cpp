@@ -75,7 +75,7 @@ unsigned int Symbol_table::hash(const char * str)
   {
     hash = (hash * seed) + (*str);
   }
-  return hash;
+  return hash % 211;
 }
 
 

@@ -1,6 +1,7 @@
 #include<iostream>
 #include<stdio.h>
 #include<ctype.h>
+#include "symTable.h"
 
 #ifndef _GENERAL_H_
 #define _GENERAL_H_
@@ -9,6 +10,7 @@
 extern char lexeme [100];
 extern char nextChar;
 extern int lexLen;
+extern Symbol_table symbolTable;
 
 /* Character classes */
 extern int charClass;

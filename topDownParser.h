@@ -6,10 +6,10 @@
 #define _TOP_DOWN_PARSER_H_
 /* Function declarations */
 void stmt_list();
-void stmt();
-void expr();
-void term();
-void factor();
+int stmt();
+int expr();
+int term();
+int factor();
 void error(const char *);
 
 #endif
