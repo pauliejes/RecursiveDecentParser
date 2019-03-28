@@ -48,6 +48,9 @@ int lookup(char ch)
                 addChar();
                 nextToken = ASSIGN_OP;
                 break;
+      case '\n':
+                addChar();
+                nextToken = NEWLINE;
       default:
                 addChar();
                 nextToken = EOF;
@@ -96,7 +99,7 @@ void getChar()
 */
 void getNonBlank()
 {
-   while (isspace(nextChar))
+   while (isspace(nextChar) && nextChar != '\n')
       getChar();
 }
 
