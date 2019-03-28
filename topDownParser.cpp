@@ -92,6 +92,7 @@ int stmt()
    if(nextToken == IDENT) {
       //get the next token
       Symbol_ptr var_to_assign = symbolTable.insert(lexeme);
+<<<<<<< HEAD
       //expr is too extreme here, should only 
       if(cin.peek() != '='){
          return_val = expr();
@@ -105,6 +106,14 @@ int stmt()
             cout << "return_val = " << return_val << endl;
             var_to_assign->putval(return_val);
          }
+=======
+      return_val = expr();
+      while (nextToken == ASSIGN_OP) {
+         lex();
+         return_val = stmt();
+         cout << "return_val = " << return_val << endl;
+         var_to_assign->putval(return_val);
+>>>>>>> 69958c6ae2f9c41889e9bd2125d07a076e1e7708
       }
    } else {
       //plane expressions
