@@ -12,7 +12,7 @@ Symbol_node::~Symbol_node(void){}
 
 void Symbol_node::putval(int val) {
   this->val = val;
-}
+} 
 
 int Symbol_node::getval(void) {
   return this->val;
@@ -75,7 +75,7 @@ unsigned int Symbol_table::hash(const char * str)
   {
     hash = (hash * seed) + (*str);
   }
-  return hash % 211;
+  return hash;
 }
 
 
