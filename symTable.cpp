@@ -154,16 +154,19 @@ void Symbol_table::dump_table() {
     if (this->table[i] == 0)
     {
 
-      cout << i+1 << " | " << "empty" << endl;
+    
     } 
     //if this bucket contains a list of symbols
     else {
     
       ptrz = this->table[i];
-      cout << i+1 << " | ";
       do{
-        cout << ptrz->id << " = " << ptrz->val << "  ||  ";
-        ptrz = ptrz->getNext();
+      
+	cout << "============================"<<endl;
+	cout << ptrz->id << " = " << ptrz->val;    
+	cout << "============================"<<endl;
+	cout << ptrz->id << " = " << ptrz->val;
+	ptrz = ptrz->getNext();
       }while(ptrz != 0);
       cout << endl;
     }
