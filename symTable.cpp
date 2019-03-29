@@ -71,7 +71,7 @@ unsigned int Symbol_table::hash(const char * str)
   unsigned int hash = 0;
   unsigned int i = 0; 
 
-  for (i = 0; i < sizeof(str)/sizeof(char); ++str, ++i)
+  for (i = 0; i < strlen(str); ++str, ++i)
   {
     hash = (hash * seed) + (*str);
   }
@@ -89,7 +89,7 @@ unsigned int Symbol_table::hash(const char * str)
 */
 Symbol_ptr Symbol_table::insert (char * name) 
 {
-  //cout << "called insert\n";
+ 
   
   //check if the symbol is already in the table
   Symbol_ptr ptr = this->lookup(name);
