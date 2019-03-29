@@ -94,9 +94,12 @@ int stmt()
       Symbol_ptr var_to_assign = symbolTable.insert(lexeme);
       //expr is too extreme here, should only 
       if(cin.peek() != '='){
+        
+              cout << "HI" << endl;
          return_val = expr();
       }
       else {
+
          factor();
          while (nextToken == ASSIGN_OP) {
             lex();
