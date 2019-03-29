@@ -147,7 +147,9 @@ Symbol_ptr Symbol_table::lookup(char * name)
     The full symbol table organized as described above
 */
 void Symbol_table::dump_table() {
-  Symbol_ptr ptrz;
+  cout << "============================"<<endl;
+
+  Symbol_ptr ptrz = NULL;
   for (int i = 0; i < 211; ++i)
   {
     //if this bucket is empty
@@ -161,14 +163,11 @@ void Symbol_table::dump_table() {
     
       ptrz = this->table[i];
       do{
-      
-	cout << "============================"<<endl;
-	cout << ptrz->id << " = " << ptrz->val;    
-	cout << "============================"<<endl;
-	cout << ptrz->id << " = " << ptrz->val;
-	ptrz = ptrz->getNext();
+            
+      	cout << ptrz->getId() << " = " << ptrz->getval() << endl;    
+        ptrz = ptrz->getNext();
       }while(ptrz != 0);
-      cout << endl;
     }
   }
+  cout << "============================"<<endl;
 }

@@ -121,6 +121,9 @@ int lex()
                       addChar();
                       getChar();
                    }
+                   /*if(strcmp(lexeme,"quit") == 0) {
+                    exit(11);
+                   }*/
                    nextToken = IDENT;
                    break;
 
